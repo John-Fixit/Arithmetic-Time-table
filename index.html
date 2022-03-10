@@ -6,17 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Time table</title>
+    <link rel="stylesheet" href="style.css">
     <script src="table.js"></script>
     
 </head>
 
 <body>
-    <input type="text" name="" id="block">
-    <input type="text" name="" id="line">
-    <div id="result" style="display:flex;"></div>
-    <button onclick="Multiply()" style="background: red; padding: 10px; border-radius: 10px;">Multiply</button>
-    <button onclick="Add()" style="background: green; padding: 10px; border-radius: 10px;">Add</button>
-    <button onclick="Subtract()" style="background: blue; padding: 10px; border-radius: 10px;">Subtract</button>
+    <div class="container">
+        <input type="text" name="" id="block" placeholder="Block">
+        <input type="text" name="" id="line" placeholder="Line"><br>
+        <button onclick="Multiply()" style="background: red; padding: 10px; border-radius: 10px;">Multiply</button>
+        <button onclick="Add()" style="background: green; padding: 10px; border-radius: 10px;">Add</button>
+        <button onclick="Subtract()" style="background: blue; padding: 10px; border-radius: 10px;">Subtract</button>
+        <div id="result" style="display:flex;"></div>
+    </div>
+    
 </body>
 
 </html>

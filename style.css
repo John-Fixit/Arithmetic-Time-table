@@ -1,0 +1,16 @@
+.container{
+    background: radial-gradient(rgb(185, 207, 88),rgb(221, 135, 37),rgb(85, 247, 11));
+    text-align: center;
+}
+#block,#line{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+}
+#result{
+    font-size: 3vh;
+    font-family: sans-serif;
+    background: orange;
+    color: white;
+    
+}

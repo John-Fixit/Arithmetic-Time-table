@@ -6,7 +6,7 @@ function Multiply() {
     for (let j = 1; j <= val2; j++) {
         time+='<tr>'
             for (let i = 1; i <= val1; i++) {
-                time += '<td> ' + i + ' x ' + j + ' = ' + (i * j) + ' </td>'
+                time += '<td>' + i + ' x ' + j + ' = ' + (i * j) + ' </td>'
             }
         '</tr>'
     }
@@ -18,9 +18,9 @@ function Add(){
     var val2 = line.value;
     var time = ''
     time+='<table border=1>'
-        for (j = 1; j<=val1; j++){
+        for (j = 1; j<=val2; j++){
        time+='<tr>'
-        for (i=1; i <= val2; i++){
+        for (i=1; i <= val1; i++){
             time+='<td>' + j + '+' + i + '=' + (Number(j)+Number(i)) + '</td>'
         }
         '</tr>' 
@@ -40,6 +40,7 @@ function Subtract(){
             time+='<td>' + j + '-' + i + '=' + (Number(j)-Number(i)) + '</td>'
         }
         '</tr>' 
+        time+='<br>'
     }
         '</table>'
     document.getElementById('result').innerHTML = time
