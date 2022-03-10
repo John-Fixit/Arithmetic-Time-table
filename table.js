@@ -43,6 +43,6 @@ function Subtract(){
         time+='<br>'
     }
         '</table>'
-    document.getElementById('result').innerHTML = time
+    document.getElementById('result').innerHTML = "multiplistiom 1 to " + j +time
 
 }
