@@ -15,8 +15,14 @@
     <div class="container">
         <input type="text" name="" id="block" placeholder="Block range">
         <input type="text" name="" id="line" placeholder="Line range">
+        <select name="" id="choose">
+            <option value="1">Multiplication</option>
+            <option value="2">Addition</option>
+            <option value="3">Subtraction</option>
+            <option value="4">Division</option>
+        </select>
         <div class="btn">
-            <button onclick="Multiply()" style="background: red; padding: 10px; border-radius: 10px;">Multiplication</button>
+            <button onclick="check()" style="background: red; padding: 10px; border-radius: 10px;">Display</button>
             <button onclick="Add()" style="background: green; padding: 10px; border-radius: 10px; margin-left: 5px;">Addition</button>
             <button onclick="Subtract()" style="background: blue; padding: 10px; border-radius: 10px; margin-left: 5px;">Subtraction</button>
         </div>
