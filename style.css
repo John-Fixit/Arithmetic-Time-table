@@ -1,11 +1,10 @@
 .container{
     background: radial-gradient(rgb(185, 207, 88),rgb(221, 135, 37),rgb(85, 247, 11));
-    text-align: center;
-    background-image: url(bg-c.jpg);
+    background-image: url(child.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 90vh;
+    height: 97.5vh;
 }
 #block,#line{
     height: 30px;
@@ -18,7 +17,8 @@
 #result{
     font-size: 3vh;
     font-family: sans-serif;
-    /* background: orange; */
     margin-left: 5vh;
+    margin-top: 10vh;
+
     
 }
