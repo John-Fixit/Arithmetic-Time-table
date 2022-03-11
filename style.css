@@ -1,24 +1,68 @@
 .container{
     background: radial-gradient(rgb(185, 207, 88),rgb(221, 135, 37),rgb(85, 247, 11));
-    background-image: url(child.jpg);
+    background-image: url(bg-c.jpg);
+    text-align: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 97.5vh;
+    background-attachment: fixed;
+    height: 96vh;
 }
-#block,#line{
+#time{
+    background: green;
+    color: white;
+    font-size: 3vh;
+    width: 120px;
+}
+.input1,.input2,#chose,.btn,#result{
+    margin-top: 40px;
+}
+#input1{
     height: 30px;
     width: 100px;
     border-radius: 10px;
+    box-shadow: inset 6px 6px 6px rgb(85, 247, 11),5px 6px 5px rgb(85, 247, 11);
+}
+#input2{
+    height: 30px;
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: inset 6px 6px 6px rgb(85, 247, 11),5px 6px 5px rgb(85, 247, 11);
 }
 .btn{
-    margin-top: 10px;
+    padding: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    outline: none; 
+    animation: t 5s linear 0s infinite; 
 }
-#result{
-    font-size: 3vh;
-    font-family: sans-serif;
-    margin-left: 5vh;
-    margin-top: 10vh;
-
+#chose{
+    padding: 8px;
+    background-color: lightgreen;
+    border-radius: 5px;
+  
+}
+@keyframes t{
+    0%{
+        background-color: blue;
+    }
+    20%{
+        background-color: aqua;
+    }
+    60%{
+        background-color: red;
+    }
+    80%{
+        background-color: yellow;
+    }
+    100%{
+        background-color: green;
+    }
     
 }
+#result{
+        font-size: 3vh;
+        font-family: sans-serif;
+        line-height: 1.7;
+        margin-top: 2px;
+    }
