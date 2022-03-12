@@ -5,13 +5,19 @@ function displayTime(){
 }
 setInterval(displayTime,10)
 
-function mul() {
+function mul(){
     song.pause()
     select = chose.options[chose.selectedIndex].value
     var val1 = input1.value;
     var val2 = input2.value
     var coil = ''
-    if (select == 1) {
+    if ((select == 0 || 1 || 2 || 3 || 4) && (val1 <=1 || val2 <=1)){
+        alert('Please enter an integer number')
+    }
+    else if (select == 0){
+        alert('Please select the operation')
+    }
+    else if (select == 1) {
         coil += '<table border=1 align=center>Multiplication Table'
         coil+='<tr>'
         for(k = 1; k<=val1; k++){
@@ -101,8 +107,7 @@ function mul() {
         '</table>'
         result.innerHTML = panel
     }
-    else if (select == 0){
-        alert('Please select the operation')
+    else{
+        alert('Enter Real Number')
     }
-    
 }
