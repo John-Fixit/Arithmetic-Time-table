@@ -12,10 +12,10 @@ function mul(){
     var val2 = input2.value
     var coil = ''
     if ((select == 0 || 1 || 2 || 3 || 4) && (val1 <=1 || val2 <=1)){
-        alert('Please enter an integer number')
+        result.innerHTML = 'Please enter an integer number'
     }
     else if (select == 0){
-        alert('Please select the operation')
+        result.innerHTML='Please select the operation'
     }
     else if (select == 1) {
         coil += '<table border=1 align=center>Multiplication Table'
@@ -108,6 +108,6 @@ function mul(){
         result.innerHTML = panel
     }
     else{
-        alert('Enter Real Number')
+        result.innerHTML='Enter Real Number'
     }
 }
