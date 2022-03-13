@@ -44,7 +44,7 @@ function mul(){
         coil += '<table border = 1 align = center> Addition Table'
         coil+='<tr>'
         for(k = 1; k<=val1; k++){
-            coil+='<th>'+'Multiplication'+'<br>'+'Table' + k +'</th>'
+            coil+='<th>'+'Addition'+'<br>'+'Table' + k +'</th>'
         }
         '</tr>'
         for (i = 1; i <= val2; i++) {
@@ -58,54 +58,54 @@ function mul(){
         result.innerHTML = coil;
     }
     else if (select == 3) {
-        panel = '';
+        coil = '';
         var val1 = input1.value;
         var val2 = input2.value;
-        panel += '<table border= 1 align = center> Subtraction Table'
+        coil += '<table border= 1 align = center> Subtraction Table'
         coil+='<tr>'
         for(k = 1; k<=val1; k++){
-            coil+='<th>'+'Multiplication'+'<br>'+'Table' + k +'</th>'
+            coil+='<th>'+'Subtraction'+'<br>'+'Table' + k +'</th>'
         }
         '</tr>'
         for (i = 1; i <= val2; i++) {
-            panel += '<tr>'
+            coil += '<tr>'
             for (j = 1; j <= val1; j++) {
                 if (j > i) {
-                    panel += '<td>' + j + '-' + i + '=' + (j - i) + '</td>'
+                    coil += '<td>' + j + '-' + i + '=' + (j - i) + '</td>'
                 }
                 else if (j < i) {
-                    panel += '<td>' + i + '-' + j + '=' + (i - j) + '</td>'
+                    coil += '<td>' + i + '-' + j + '=' + (i - j) + '</td>'
                 }
             }
             '</tr>'
         }
         '</table>'
-        result.innerHTML = panel
+        result.innerHTML = coil
     }
     else if (select == 4) {
-        panel = '';
+        coil = '';
         var val1 = input1.value;
         var val2 = input2.value;
-        panel += '<table border= 1 align = center> Division Table'
+        coil += '<table border= 1 align = center> Division Table'
         coil+='<tr>'
         for(k = 1; k<=val1; k++){
-            coil+='<th>'+'Multiplication'+'<br>'+'Table' + k +'</th>'
+            coil+='<th>'+'Division'+'<br>'+'Table' + k +'</th>'
         }
         '</tr>'
         for (i = 1; i <= val2; i++) {
-            panel += '<tr>'
+            coil += '<tr>'
             for (j = 1; j <= val1; j++) {
                 if (j > i) {
-                    panel += '<td>' + j + '/' + i + '=' + (j / i).toFixed(1) + '</td>'
+                    coil += '<td>' + j + '/' + i + '=' + (j / i).toFixed(1) + '</td>'
                 }
                 else if (j < i) {
-                    panel += '<td>' + i + '/' + j + '=' + (i / j).toFixed(1) + '</td>'
+                    coil += '<td>' + i + '/' + j + '=' + (i / j).toFixed(1) + '</td>'
                 }
             }
             '</tr>'
         }
         '</table>'
-        result.innerHTML = panel
+        result.innerHTML = coil
     }
     else{
         result.innerHTML='Enter Real Number'
