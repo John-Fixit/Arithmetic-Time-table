@@ -21,15 +21,13 @@ function mul(){
         coil += '<table border=1 align=center>Multiplication Table'
         coil+='<tr>'
         for(k = 1; k<=val1; k++){
-            coil+='<th>'+'Multiplication'+'<br>'+'Table' + k +'</th>'
+            coil+='<th>'+'Multiplication'+'<br>'+'Table ' + k +'</th>'
         }
         '</tr>'
         for (i = 1; i <= val2; i++) {
             coil += '<tr>'
             for (j = 1; j <= val1; j++) {
-                coil += '<td>' +
-                    j + 'x ' + i + '= ' + (i * j) +
-                    '</td>'
+                coil += '<td>' +j + 'x ' + i + '= ' + (i * j) +'</td>'
             }
             '</tr>'
         }
